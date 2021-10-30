@@ -26,7 +26,7 @@ def inversa (px,py,pz,orientacion):
 
 def jacobiana(theta1, theta2, theta3,d4):
     a11 = -350*np.sin(theta1)-300*np.sin(theta1+theta2)
-    a12 = 300*np.sin(theta1+theta2)
+    a12 = -300*np.sin(theta1+theta2)
     a21 = 350*np.cos(theta1)+300*np.cos(theta1+theta2)
     a22 = 300*np.cos(theta1+theta2)
     result = np.array([[a11,a12,0,0],
